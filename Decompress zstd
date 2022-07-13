@@ -1,0 +1,21 @@
+This is the code to decompress manually downloaded Pushshift data. All previous submission dumps have been recompressed using zstandard compression.
+The data for each month is the exact same as it was previously.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+When decompressing these files using zstandard, you may need up to 2GB of free memory. Also, make sure to
+use the flag "--long=31" when decompressing as you will get an error otherwise.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Examples to decompress (using linux / Ubuntu / Debian / etc.)
+
+zstd -d RS_2020-01.zst --long=31    (This will decompress the file)
+zstd -cd RS_2020-01.zst --long=31   (decompress to STDOUT -- good for piping into scripts without having to decompress the entire file)
+
+zstandard is available on all major platforms (Apple, Windows, Linux). If you need guidance for installing
+zstandard, a quick Google search will often prove very fruitful (e.g. "How to install zstandard Mac", etc.)
+
+
+For mac (terminal)
+
+pip install zstd
+zstd -d RS_2020-01.zst --long=31 
