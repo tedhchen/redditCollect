@@ -13,7 +13,44 @@ Next steps:
 - Sketch the main functions 
 """
 
-pip install pmaw pandas
-import pandas as pd
-from pmaw import PushshiftAPIapi = PushshiftAPI()
+## Extracting posts from the reddit "pushshift". Based on: https://github.com/Silvertongue26/reddit_api/blob/main/reddit6.py#L11
 
+import pandas as pd
+import requests
+import json
+import datetime
+import csv
+import psaw
+
+
+from psaw import PushshiftAPI                               #Importing wrapper library for reddit(Pushshift)
+import datetime as dt                                       #Importing library for date management
+import pandas as pd                                         #Importing library for data manipulation in python
+import matplotlib.pyplot as plt                             #Importing library for creating interactive visualizations in Python
+from pprint import pprint
+
+pd.set_option("display.max_columns", None)                  #Configuration for pandas to show all columns on dataframe
+api = PushshiftAPI()                                        #We create an object of the API
+
+def data_prep_posts(subreddit, start_time, end_time, filters, limit):
+    if(len(filters) == 0):
+        filters = ['id', 'author', 'created_utc',
+                   'domain', 'url',
+                   'title', 'num_comments']                 #We set by default some columns that will be useful for data analysis
+
+    posts = list(api.search_submissions(
+        subreddit="pushshift",                                #We set the subreddit we want to audit
+        after=int(dt.datetime(2021, 1, 1).timestamp()),                                   #Start date
+        before=int(dt.datetime(2021, 2, 1).timestamp()),                                   #End date
+        filter=filters,                                     #Column names we want to get from reddit
+        limit=limit))                                       #Max number of posts we wanto to recieve
+
+    return pd.DataFrame(posts)                              #Return dataframe for analysis
+
+###Function to plot the number of posts per day on the specified subreddit
+def count_posts_per_date(df_p, title, xlabel, ylabel):
+    df_p.groupby([df_p.datetime.dt.date]).count().plot(y='id', rot=45, kind='bar', label='Posts')
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.show()
