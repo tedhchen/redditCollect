@@ -50,3 +50,5 @@ submissions.to_csv('filename.csv')
        'crosspost_parent_list'],
       dtype='object')
       """
+
+""" How to merge submissions and comments: https://galenweld.github.io/reddit_join_comments_example/
