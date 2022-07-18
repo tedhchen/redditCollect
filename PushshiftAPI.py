@@ -22,5 +22,5 @@ submissions.to_csv('filename.csv')
 
 
 #Note: post_hint column seems to have 'image' as value if the post contains a photo
-
+#The column link_id would allow us to match comments with submission. Link: https://galenweld.github.io/reddit_join_comments_example/ #
 
