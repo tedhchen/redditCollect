@@ -12,3 +12,6 @@ df = pd.DataFrame([thing.d_ for thing in posts])
 print(df)
 
 df.to_csv('filename.csv')
+
+
+#Note: post_hint column seems to have 'image' as value if the post contains a photo
