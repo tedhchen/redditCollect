@@ -2,16 +2,22 @@ import psaw
 from psaw import PushshiftAPI
 import pandas as pd
 
+#Initialize pushshift
 api = PushshiftAPI()
 
-posts = list(api.search_submissions(
-        subreddit='stamps', limit = 10))
+#Define api_request_generator and establish the parameters of the query
+api_request_generator = list(api.search_submissions(
+        subreddit='title', limit = 10))
 
-df = pd.DataFrame([thing.d_ for thing in posts])
+#Organize data into dataframe
+submissions = pd.DataFrame([submission.d_ for submission in api_request_generator])
 
-print(df)
+#Check to see what columns/metadata exist in this data
+submissions.columns
 
-df.to_csv('filename.csv')
+print(submissions)
+
+submissions.to_csv('filename.csv')
 
 
 #Note: post_hint column seems to have 'image' as value if the post contains a photo
