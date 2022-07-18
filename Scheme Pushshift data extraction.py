@@ -43,7 +43,7 @@ def data_prep_posts(subreddit, start_time, end_time, filters, limit):
         after=int(dt.datetime(2021, 1, 1).timestamp()),                                   #Start date
         before=int(dt.datetime(2021, 2, 1).timestamp()),                                   #End date
         filter=filters,                                     #Column names we want to get from reddit
-        limit=limit))                                       #Max number of posts we wanto to recieve
+        limit=100))                                       #Max number of posts we wanto to recieve
 
     return pd.DataFrame(posts)                              #Return dataframe for analysis
 
