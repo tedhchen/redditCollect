@@ -6,6 +6,7 @@ import pandas as pd
 api = PushshiftAPI()
 
 #Define api_request_generator and establish the parameters of the query
+#Full list of parameters: https://pushshift.io/api-parameters/
 api_request_generator = list(api.search_submissions(
         subreddit='title', limit = 10))
 
