@@ -6,4 +6,8 @@ api = PushshiftAPI()
 posts = list(api.search_submissions(
         subreddit='stamps', limit = 10))
 
-print(posts)
+df = pd.DataFrame(posts)
+
+print(df)
+
+df.to_csv('filename.csv')
