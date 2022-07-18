@@ -20,6 +20,12 @@ print(submissions)
 
 submissions.to_csv('filename.csv')
 
+#Get all comment ids for a particular submission
+query='6uey5x' #Define Your Query: insert the submission id
+url = f'https://api.pushshift.io/reddit/submission/comment_ids/{query}'
+request = requests.get(url)
+json_response = request.json()
+json_response
 
 #Note: post_hint column seems to have 'image' as value if the post contains a photo
 #The column link_id would allow us to match comments with submission. Link: https://galenweld.github.io/reddit_join_comments_example/ #
