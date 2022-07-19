@@ -53,6 +53,15 @@ comments = pd.DataFrame([comments.d_ for comments in api_request_generator])
 print(comments.columns)
 """"""
 
+#Sonjas way
+submissions.rename(columns = {'id':'link_id'}, inplace = True)
+
+comments_and_submissions = pd.concat([submissions, comments])
+
+comment_and_submissions.head()
+#Sonjas way
+
+
 # Joining the comments to the submissions
 
 grouped_comments = comments.groupby('link_id').agg({'body': '\n'.join})
