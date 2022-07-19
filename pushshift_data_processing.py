@@ -1,5 +1,7 @@
 #Note: for this code, we need to decompress and run the code for every monthly file separately
     #Is there a better way to decompress and run selected monthly files at once?
+    
+#Note: Reddit data uses epoch timestamps: how can those be used to filter files by time?
 
 import json
 import pandas as pd
