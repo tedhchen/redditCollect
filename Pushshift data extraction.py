@@ -54,6 +54,10 @@ print(comments.columns)
 """"""
 
 #Sonjas way
+comments['type'] = 'comment'
+
+submissions['type'] = 'submission'
+
 submissions.rename(columns = {'id':'link_id'}, inplace = True)
 
 comments_and_submissions = pd.concat([submissions, comments])
