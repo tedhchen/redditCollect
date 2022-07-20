@@ -5,7 +5,7 @@ import pytz
 
 ### Add the following code to the filter of submissions/comments ###
 
-#0- # defining the timezone to Helsinki
+#0- # defining the timezone to UTC
 tz = pytz.timezone("UTC")
 
 #1- assign the desired date to a variable
