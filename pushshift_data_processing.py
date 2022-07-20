@@ -66,7 +66,7 @@ reddit_data = pd.concat([df_rs, df_rc])   #Concenate comments and submissions
 #Note: Add function to group data by link_id
 #Note: Check that data is in chronological order
 
-reddit_data.to_csv('REDDIT_set_year_month.csv')
+reddit_data.to_csv('REDDIT_set_dates.csv')
 
 #Note: post_hint column seems to have 'image' as value if the post contains a photo
 #Note: The column link_id would allow us to match comments with submission. Link: https://galenweld.github.io/reddit_join_comments_example/
