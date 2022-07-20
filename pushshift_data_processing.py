@@ -67,8 +67,8 @@ df_rs.rename(columns = {'id':'link_id'}, inplace = True)   #Unify headers of ove
 
 reddit_data = pd.concat([df_rs, df_rc])   #Concenate comments and submissions
 
-#Note: Add function to group data by link_id
-#Note: Check that data is in chronological order
+#Sort values by link_id and time
+reddit_data.sort_values(['link_id', 'created_utc'], inplace=True)
 
 reddit_data.to_csv('REDDIT_set_dates.csv')
 
