@@ -13,6 +13,16 @@ for line in open('filename.json'):
 
 #Use list comprehension to retrieve submissions that fulfill conditions
 
+#Filter for timeperiod
+#Define start_time and end_time for wanted timeperiod to collect data within a timerange
+start_time = pytz.timezone('UTC').localize(datetime.datetime(2000, 01, 01, 0, 0, 0)) #Year, month, day, hour, minute | # tz.localize is to set the UTC time zone
+end_time = pytz.timezone('UTC').localize(datetime.datetime(2001, 01, 01, 0, 0, 0))  #Year, month, day, hour, minute | # tz.localize is to set the UTC time zone
+
+ux_start_time = int(time.mktime(start_time.timetuple())) #Convert datetime to unix
+ux_end_time = int(time.mktime(end_time.timetuple())) #Convert datetime to unix
+
+submissions = [time for time in submissions if time['created_utc'] in range(ux_start_time,ux_end_time)] #filter items
+
 #column equals condition: filter for retrieving items, where key equals wanted value
 #can be used to retrieve submissions from any subreddits, any authors etc.
 valuelist = ['value1', 'value2'] #define wanted values
