@@ -70,6 +70,7 @@ reddit_data = pd.concat([df_rs, df_rc])   #Concenate comments and submissions
 #Sort values by link_id and time
 reddit_data.sort_values(['link_id', 'created_utc'], inplace=True)
 
+#Save dataframe as csv
 reddit_data.to_csv('REDDIT_set_dates.csv')
 
 #Note: post_hint column seems to have 'image' as value if the post contains a photo
