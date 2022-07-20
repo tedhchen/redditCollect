@@ -53,6 +53,9 @@ df_rs.rename(columns = {'id':'link_id'}, inplace = True)   #Unify headers of ove
 
 reddit_data = pd.concat([df_rs, df_rc])   #Concenate comments and submissions
 
+#Note: Add function to group data by link_id
+#Note: Check that data is in chronological order
+
 reddit_data.to_csv('REDDIT_set_year_month.csv')
 
 #Note: post_hint column seems to have 'image' as value if the post contains a photo
