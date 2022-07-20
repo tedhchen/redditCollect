@@ -16,8 +16,8 @@ date_time_after = tz.localize(datetime.datetime(2021, 7, 26, 21, 20)) # Year, mo
 print("date_time =>",date_time_after)
  
 #2- convert datetime to unix and assign it to a variable
-unix_time_after = time.mktime(date_time_after.timetuple())
-unix_time_after = int(unix_time_after)
+unix_time_after = int(time.mktime(date_time_after.timetuple()))
+
   
 # optional: display unix timestamp after conversion
 print("unix_timestamp => ",unix_time_after)
@@ -25,8 +25,8 @@ print("unix_timestamp => ",unix_time_after)
   
 ### Repeat the process for the date "before" | Short version: ###
 date_time_before = tz.localize(datetime.datetime(2022, 7, 26, 21, 20)) 
-unix_time_before = time.mktime(date_time_before.timetuple())
-unix_time_before = int(unix_time_before)
+unix_time_before = int(time.mktime(date_time_before.timetuple()))
+
   
   
 #3- Include both variables as parameters in the filter 
