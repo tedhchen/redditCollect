@@ -2,6 +2,7 @@
     #Is there a better way to decompress and run selected monthly files at once?
     
 #Note: Reddit data uses unix timestamps, creation time of each item is UTC
+    #This code uses UTC timestamp for timeperiod filtering
 
 import json
 import pandas as pd
