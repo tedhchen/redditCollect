@@ -7,8 +7,11 @@ This repository contains code to collect data from Reddit. It enables the filter
 Before thinking what parameters (filters) should be adapted to obtain relevant data, it's key to know the following:
 1. The code can (so far) only extract data specific to one calendar month. 
 2. The data has to be accessed, selected, downloaded and decompressed before running the code. For that:
+
     2.1. Enter https://files.pushshift.io/reddit/
+   
     2.2. Click on submissions -> download the desired month
+    
     2.3. Go back and click on comments -> download the desired month
 
 # Using the code 
