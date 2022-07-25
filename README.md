@@ -38,7 +38,7 @@ The CSV will have the following columns:
 (ofc means only available for comments)
 
 'archived': ofs
-# 'author': User nickname
+-> 'author': User nickname
 'author_flair_background_color':
 'author_flair_css_class':
 'author_flair_richtext':
@@ -48,10 +48,10 @@ The CSV will have the following columns:
 'brand_safe': ofs
 'can_gild': ofs
 'contest_mode': ofs
-## 'created_utc': time when the content was posted (UTC)
+-> 'created_utc': time when the content was posted (UTC)
 'distinguished':
 'domain': ofs
-## 'edited': whether the content has been edited
+-> 'edited': whether the content has been edited
 'gilded': 
 'hidden': ofs
 'hide_score': ofs
@@ -73,7 +73,7 @@ The CSV will have the following columns:
 'num_crossposts', 
 'over_18', 
 'parent_whitelist_status', 
-# 'permalink': permanent link to the comment
+-> 'permalink': permanent link to the comment
 'retrieved_on': date when the data was extracted (UTC)
 'rte_mode', 
 'score', 
@@ -83,7 +83,7 @@ The CSV will have the following columns:
 'send_replies',
 'spoiler',
 'stickied', 
-# 'subreddit': Subreddit (?)
+-> 'subreddit': Subreddit (?)
 'subreddit_id',
 'subreddit_name_prefixed', 
 'subreddit_type', 
@@ -91,14 +91,14 @@ The CSV will have the following columns:
 'thumbnail', 
 'thumbnail_height',
 'thumbnail_width', 
-# 'title': ofs Title
+-> 'title': ofs Title
 'url': ofs (?)
 'whitelist_status', 
 'post_hint', 
 'preview',
-# 'type': submission or comment?
+-> 'type': submission or comment?
 'controversiality', 
-# 'body': ofc Comments separated by line spacing
+-> 'body': ofc Comments separated by line spacing
 'ups', 
 'id', 
 'parent_id'], 
