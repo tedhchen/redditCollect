@@ -48,10 +48,10 @@ The CSV will have the following columns:
 'brand_safe': ofs
 'can_gild': ofs
 'contest_mode': ofs
-# 'created_utc': time when the content was posted (UTC)
+## 'created_utc': time when the content was posted (UTC)
 'distinguished':
 'domain': ofs
-# 'edited': whether the content has been edited
+## 'edited': whether the content has been edited
 'gilded': 
 'hidden': ofs
 'hide_score': ofs
