@@ -17,36 +17,92 @@ Before thinking what parameters (filters) should be adapted to obtain relevant d
     
     2.3. Go back and click on comments -> download the desired month
 
-    2.4 Decompress the files and save them.
+    2.4 Decompress the files and save them. Follow these steps to decompress the file:
+    
+        2.4.1 Install zstandard: https://sourceforge.net/projects/zstd-for-windows/files/latest/download
+        
+        2.4.2 Decompress it: zstd -d ("name of the file") --long=31  
 
 
 
 # Using the code 
 Do a brainstorming of the information you'd like to get. Is it one specific Subreddit that you'd like to explore, or all posts/comments using one or multiple keywords? After that, customize the code by adding and apapting the parameters as you consider convenient. For a list of all customizable parameters access the API documentation: https://github.com/pushshift/api/blob/master/README.md
  
-The lines that should be adapted are: [ ] 
+The lines that should be adapted are: [...] 
 
 Once this is done, run the code and open the created csv to confirm the extraction was sucessfull.
 
 # Understanding the output
-Meaning of columns
+The CSV will have the following columns: 
+(ofs means only available for submissions)
+(ofc means only available for comments)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'archived': ofs
+# 'author': User nickname
+'author_flair_background_color':
+'author_flair_css_class':
+'author_flair_richtext':
+'author_flair_text':
+'author_flair_text_color': 
+'author_flair_type':
+'brand_safe': ofs
+'can_gild': ofs
+'contest_mode': ofs
+# 'created_utc': time when the content was posted (UTC)
+'distinguished':
+'domain': ofs
+# 'edited': whether the content has been edited
+'gilded': 
+'hidden': ofs
+'hide_score': ofs
+'link_id': link ID
+'is_crosspostable':
+'is_reddit_media_domain': 
+'is_self': 
+'is_video',
+'link_flair_css_class', 
+'link_flair_richtext', 
+'link_flair_text', 
+'link_flair_text_color', 
+'link_flair_type', 
+'locked', 
+'media',
+'media_embed',
+'no_follow', 
+'num_comments', 
+'num_crossposts', 
+'over_18', 
+'parent_whitelist_status', 
+# 'permalink': permanent link to the comment
+'retrieved_on': date when the data was extracted (UTC)
+'rte_mode', 
+'score', 
+'secure_media',
+'secure_media_embed',
+'selftext',
+'send_replies',
+'spoiler',
+'stickied', 
+# 'subreddit': Subreddit (?)
+'subreddit_id',
+'subreddit_name_prefixed', 
+'subreddit_type', 
+'suggested_sort',
+'thumbnail', 
+'thumbnail_height',
+'thumbnail_width', 
+# 'title': ofs Title
+'url': ofs (?)
+'whitelist_status', 
+'post_hint', 
+'preview',
+# 'type': submission or comment?
+'controversiality', 
+# 'body': ofc Comments separated by line spacing
+'ups', 
+'id', 
+'parent_id'], 
+dtype='object'
 
 
 
