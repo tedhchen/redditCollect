@@ -15,6 +15,7 @@ Before thinking what parameters (filters) should be adapted to obtain relevant d
 Do a brainstorming of the information you'd like to get. Is it one specific Subreddit that you'd like to explore, or all posts/comments using one or multiple keywords? After that, customize the code by adding and apapting the parameters as you consider convenient. For a list of all customizable parameters access the API documentation: https://github.com/pushshift/api/blob/master/README.md
  
 The lines that should be adapted are: [ ] 
+
 Once this is done, run the code and open the created csv to confirm the extraction was sucessfull.
 
 
