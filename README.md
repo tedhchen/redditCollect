@@ -33,8 +33,7 @@ Meaning of columns
 
 
 
-Code is based on submissions, can't search by comments
-comments retrieved based on the submissions ID
+
 
 
 
