@@ -3,4 +3,4 @@
 from RedDownloader import RedDownloader
 
 yes_media = ["List with the permalinks of submissions with media"]
-for url in yes_media: RedDownloader.Download(yes_media, destination="path")
+for url in yes_media: RedDownloader.Download(yes_media, destination="path", quality=480) # Define quality: 144, 240, 360, 480, 720, 1080
