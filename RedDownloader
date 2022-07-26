@@ -1,0 +1,6 @@
+# pip install RedDownloader
+
+from RedDownloader import RedDownloader
+
+yes_media = ["List with the permalinks of submissions with media"]
+for url in yes_media: RedDownloader.Download(yes_media, destination="path")
