@@ -14,5 +14,8 @@ reddit = praw.Reddit(
     user_agent="example",
     username="PythonResearch",
 )
-strId = [LIST WITH THE IDs that have pictures on it]
+
 submissions = reddit.get_info(submission_id = strId) (limit=100)
+
+
+
