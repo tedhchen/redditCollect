@@ -38,70 +38,135 @@ The CSV will have the following columns:
 (ofc means only available for comments)
 
 'archived': ofs
+
 -> 'author': User nickname
+
 'author_flair_background_color':
+
 'author_flair_css_class':
+
 'author_flair_richtext':
+
 'author_flair_text':
+
 'author_flair_text_color': 
+
 'author_flair_type':
+
 'brand_safe': ofs
+
 'can_gild': ofs
+
 'contest_mode': ofs
+
 -> 'created_utc': time when the content was posted (UTC)
+
 'distinguished':
+
 'domain': ofs
+
 -> 'edited': whether the content has been edited
+
 'gilded': 
+
 'hidden': ofs
+
 'hide_score': ofs
+
 'link_id': link ID
+
 'is_crosspostable':
+
 'is_reddit_media_domain': 
+
 'is_self': 
+
 'is_video',
+
 'link_flair_css_class', 
+
 'link_flair_richtext', 
+
 'link_flair_text', 
+
 'link_flair_text_color', 
+
 'link_flair_type', 
+
 'locked', 
+
 'media',
+
 'media_embed',
+
 'no_follow', 
+
 'num_comments', 
+
 'num_crossposts', 
+
 'over_18', 
+
 'parent_whitelist_status', 
+
 -> 'permalink': permanent link to the comment
+
 'retrieved_on': date when the data was extracted (UTC)
+
 'rte_mode', 
+
 'score', 
+
 'secure_media',
+
 'secure_media_embed',
+
 'selftext',
+
 'send_replies',
+
 'spoiler',
+
 'stickied', 
+
 -> 'subreddit': Subreddit (?)
+
 'subreddit_id',
+
 'subreddit_name_prefixed', 
+
 'subreddit_type', 
+
 'suggested_sort',
+
 'thumbnail', 
+
 'thumbnail_height',
+
 'thumbnail_width', 
+
 -> 'title': ofs Title
+
 'url': ofs (?)
+
 'whitelist_status', 
+
 'post_hint', 
+
 'preview',
+
 -> 'type': submission or comment?
+
 'controversiality', 
+
 -> 'body': ofc Comments separated by line spacing
+
 'ups', 
+
 'id', 
+
 'parent_id'], 
+
 dtype='object'
 
 
