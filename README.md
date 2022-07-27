@@ -28,6 +28,8 @@ Before thinking what parameters (filters) should be adapted to obtain relevant d
 # Using the code 
 Do a brainstorming of the information you'd like to get. Is it one specific Subreddit that you'd like to explore, or all posts/comments using one or multiple keywords? After that, customize the code by adding and apapting the parameters as you consider convenient. For a list of all customizable parameters, access the API documentation: https://github.com/pushshift/api/blob/master/README.md
  
+Open the main code: file pushshift_data_processing.py.
+
 In principle, the only lines that have to be adapted (besides the file paths) are: [ADD THE LINES NUMBER WHEN AVAILABLE] 
 
 Once this is done, run the code and open the created csv to confirm the extraction was sucessfull.
@@ -169,6 +171,9 @@ The CSV will have the following columns:
 
 dtype='object'
 
+
+# Downloading multimedia resources posted in submissions
+The code found in pushshift_data_processing.py doesn't extract images/videos/gifs/ gallery posts. If you'd like to explore those resources, please read the instructions and use the code in the file RedDownloader.py
 
 # Background information
 The code makes use of two data sources:
