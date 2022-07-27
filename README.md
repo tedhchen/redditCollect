@@ -1,7 +1,11 @@
 # Reddit data extraction tool 
 
-# Preface
 This repository contains code to collect data from Reddit. It enables the filtering and extraction of selected data based on the researcher's interests. For example, it facilitates the search and download of data corresponding to a specific time period, or within a selected Subreddit, or including certain keywords. Over 12 different parameters allow for a highly customizable search. 
+
+The repository includes three files:
+pushshift_data_processing.py -> the main code
+RedDownloader.py -> code for downloading media resources from posts
+Decompress zstd -> instructions for decompressing the raw data
 
 # Before using the code
 Before thinking what parameters (filters) should be adapted to obtain relevant data, it's key to know the following:
