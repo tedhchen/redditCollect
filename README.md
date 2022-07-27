@@ -4,11 +4,11 @@ This repository contains code to collect data from Reddit. It enables the filter
 
 The repository includes three files:
 
-pushshift_data_processing.py -> the main code
+   1. pushshift_data_processing.py -> the main code
+    
+   2. RedDownloader.py -> code for downloading media resources from posts
 
-RedDownloader.py -> code for downloading media resources from posts
-
-Decompress zstd -> instructions for decompressing the raw data
+   3. Decompress zstd -> instructions for decompressing the raw data
 
 # Before using the code
 Before thinking what parameters (filters) should be adapted to obtain relevant data, it's key to know the following:
