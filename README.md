@@ -9,7 +9,7 @@ Before thinking what parameters (filters) should be adapted to obtain relevant d
 
 2. The code can (so far) only carry out searches of submissions, not of comments. Based on the extracted submissions, the code finds the comments within those submissions and merges them with the respective submissions into a single csv file (using a unique ID). 
 
-3. The data has to be accessed, selected, downloaded and decompressed before running the code. For that:
+3. The raw data has to be accessed, selected, downloaded and decompressed before running the code. For that:
 
     2.1. Enter https://files.pushshift.io/reddit/
    
