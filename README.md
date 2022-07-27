@@ -26,9 +26,9 @@ Before thinking what parameters (filters) should be adapted to obtain relevant d
 
 
 # Using the code 
-Do a brainstorming of the information you'd like to get. Is it one specific Subreddit that you'd like to explore, or all posts/comments using one or multiple keywords? After that, customize the code by adding and apapting the parameters as you consider convenient. For a list of all customizable parameters access the API documentation: https://github.com/pushshift/api/blob/master/README.md
+Do a brainstorming of the information you'd like to get. Is it one specific Subreddit that you'd like to explore, or all posts/comments using one or multiple keywords? After that, customize the code by adding and apapting the parameters as you consider convenient. For a list of all customizable parameters, access the API documentation: https://github.com/pushshift/api/blob/master/README.md
  
-The lines that should be adapted are: [...] 
+In principle, the only lines that have to be adapted (besides the file paths) are: [ADD THE LINES NUMBER WHEN AVAILABLE] 
 
 Once this is done, run the code and open the created csv to confirm the extraction was sucessfull.
 
@@ -170,15 +170,7 @@ The CSV will have the following columns:
 dtype='object'
 
 
-
-# Maybe relevant
+# Background information
 The code makes use of two data sources:
 1. Pushshift - a non-official server saving all Reddit data by month(data divided into submissions & comments) -> https://files.pushshift.io.
 2. The official Reddit API (only complementarily to replace missing values) -> Python Reddit API Wrapper (PRAW)
-
-
-
-
-
-
-
