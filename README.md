@@ -19,9 +19,9 @@ Before thinking what parameters (filters) should be adapted to obtain relevant d
 
     2.4 Decompress the files and save them. Follow these steps to decompress the file:
     
-        2.4.1 Install zstandard: https://sourceforge.net/projects/zstd-for-windows/files/latest/download
-        
-        2.4.2 Decompress it: zstd -d ("name of the file") --long=31  
+       # Install zstandard: https://sourceforge.net/projects/zstd-for-windows/files/latest/download
+         zstd -d ("name of the file-submissions") --long=31  # decompress the submissions file
+         zstd -d ("name of the file-comments") --long=31  # decompress the comments file
 
 
 
