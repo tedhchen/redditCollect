@@ -173,7 +173,7 @@ dtype='object'
 
 
 # Downloading multimedia resources posted in submissions
-The code found in pushshift_data_processing.py doesn't extract images/videos/gifs/gallery posts. If you'd like to explore those resources, please read the instructions and use the code in the file RedDownloader.py.
+The code found in pushshift_data_processing.py doesn't extract images/videos/gifs/gallery posts. If you'd like to explore those resources, please read the instructions and use the code in the file RedDownloader.py (after you have a csv with the desired data).
 
 # Background information
 The code makes use of two data sources:
